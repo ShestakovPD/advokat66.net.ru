@@ -1,0 +1,14 @@
+<iframe frameborder="0" allowtransparency="true" scrolling="no"
+        src="https://ru.cryptonator.com/merchant-button?
+        merchant_id=c9dd648b09859ef17167cbfd687377b4&text=0&size=2&color=3&icon=2&name=Классный товар
+        &description=&order_id=&amount=1&currency=USD&success=&failed="
+        height="46" width="100%"></iframe>
+
+<form method="GET" action="https://api.cryptonator.com/api/merchant/v1/startpayment">
+    <input type="hidden" name="merchant_id" value="c9dd648b09859ef17167cbfd687377b4">
+    <input type="hidden" name="item_name" value="Классный товар">
+    <input type="hidden" name="invoice_currency" value="usd">
+    <input type="hidden" name="invoice_amount" value="1" data-type="number">
+    <input type="hidden" name="language" value="ru">
+    <input type="submit" value="Crypto Pay">
+</form>
